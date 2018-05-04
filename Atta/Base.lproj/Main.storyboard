@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4384" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Atta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1b-Z8-VLD" userLabel="ScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9xd-0g-tPE"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-ho-eRx" userLabel="pageControl">
+                                <rect key="frame" x="160" y="562" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="cG2-Vj-oYr"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pTp-AX-ycc" userLabel="stackView">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZC-GE-mRx">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="IRN-LU-AWi"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAZ-pd-TCB">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="j8Q-Zx-l3j"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-QH-PWP" userLabel="thirdbtn">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="tyc-LN-rns"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtc-uf-8Dm" userLabel="fourthbtn">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="jFX-5Z-aVV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.80000000000000004" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="26n-88-7mv"/>
+                                    <constraint firstItem="aZC-GE-mRx" firstAttribute="top" secondItem="pTp-AX-ycc" secondAttribute="top" id="8cq-pG-TFz"/>
+                                    <constraint firstItem="aZC-GE-mRx" firstAttribute="leading" secondItem="pTp-AX-ycc" secondAttribute="leading" id="Hgd-fC-ydV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pTp-AX-ycc" secondAttribute="trailing" id="CGz-bw-a93"/>
+                            <constraint firstItem="pTp-AX-ycc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IzA-rf-1ah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pTp-AX-ycc" secondAttribute="bottom" id="RhC-Dp-9CF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t1b-Z8-VLD" secondAttribute="bottom" constant="68" id="TR2-IV-64p"/>
+                            <constraint firstItem="tKz-ho-eRx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ae6-wD-RAE"/>
+                            <constraint firstItem="t1b-Z8-VLD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gap-54-FZS"/>
+                            <constraint firstItem="t1b-Z8-VLD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lN3-Nd-aT9"/>
+                            <constraint firstItem="tKz-ho-eRx" firstAttribute="bottom" secondItem="t1b-Z8-VLD" secondAttribute="bottom" id="pSe-Kj-bEv"/>
+                            <constraint firstItem="t1b-Z8-VLD" firstAttribute="leading" secondItem="pTp-AX-ycc" secondAttribute="leading" id="rkm-7R-HGm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstbtn" destination="aZC-GE-mRx" id="MQ6-9r-GQj"/>
+                        <outlet property="fourthbtn" destination="Rtc-uf-8Dm" id="DbM-tV-M1y"/>
+                        <outlet property="pageControl" destination="tKz-ho-eRx" id="d4e-OT-Sw8"/>
+                        <outlet property="scrollView" destination="t1b-Z8-VLD" id="X1i-fv-KJl"/>
+                        <outlet property="secondbtn" destination="nAZ-pd-TCB" id="x3r-8K-J3e"/>
+                        <outlet property="stackView" destination="jFX-5Z-aVV" id="oXV-X2-vje"/>
+                        <outlet property="thirdbtn" destination="PYJ-QH-PWP" id="aZj-q8-emR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381.60000000000002" y="-143.47826086956522"/>
+        </scene>
+    </scenes>
+</document>
