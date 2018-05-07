@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043F5D1320A08626006C5F66 /* todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F5D1220A08626006C5F66 /* todo.swift */; };
 		047F564520963B6500100969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F564420963B6500100969 /* AppDelegate.swift */; };
 		047F564720963B6500100969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F564620963B6500100969 /* ViewController.swift */; };
 		047F564A20963B6500100969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047F564820963B6500100969 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043F5D1220A08626006C5F66 /* todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo.swift; sourceTree = "<group>"; };
 		047F564120963B6400100969 /* Atta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047F564420963B6500100969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047F564620963B6500100969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				DB701CEF4C64C5A73924BFC3 /* Pods-Atta.debug.xcconfig */,
 				60154A7576ACAD1F629E9E9A /* Pods-Atta.release.xcconfig */,
+				043F5D1220A08626006C5F66 /* todo.swift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				047F564720963B6500100969 /* ViewController.swift in Sources */,
 				70B1DFF7209F8C1900DED979 /* CategoriesViewController.swift in Sources */,
 				70B1DFFB209F8C1900DED979 /* SparePartsViewController.swift in Sources */,
+				043F5D1320A08626006C5F66 /* todo.swift in Sources */,
 				70B1DFFC209F8C1900DED979 /* BrandsViewController.swift in Sources */,
 				047F564520963B6500100969 /* AppDelegate.swift in Sources */,
 				70B1E000209F8C1900DED979 /* Serverrequest.swift in Sources */,
