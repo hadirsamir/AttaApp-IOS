@@ -19,7 +19,7 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = catlist.dequeueReusableCell(withIdentifier: "catcell", for: indexPath) as UITableViewCell
+        let cell = UITableViewCell(style: <#T##UITableViewCellStyle#>.default, reuseIdentifier:"catcell")
         cell.textLabel?.text = mainPartArray [indexPath.row].main_data
         return cell
         
