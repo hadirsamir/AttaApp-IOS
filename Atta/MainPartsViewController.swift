@@ -12,6 +12,8 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
     
     @IBOutlet weak var cattableview: UITableView!
      var mainPartArray =  [MainParts]()
+   
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
