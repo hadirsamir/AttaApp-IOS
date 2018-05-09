@@ -1,5 +1,5 @@
 //
-//  SparePartsClass.swift
+//  BrandsClass.swift
 //  Atta
 //
 //  Created by mac on 5/5/18.
@@ -7,21 +7,14 @@
 //
 
 import Foundation
-
-class SpareParts{
-    
-    
-    
+struct Brands{
     var id = ""
-    var main_data = ""
-    var type = ""
+    var brand_name = ""
+    var created_at = ""
     var img_src = ""
     var img_src_mini = ""
-    var created_at = ""
-   
-   
     
-    
+   
     
     
     

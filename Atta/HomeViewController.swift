@@ -15,8 +15,8 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func SpareBtn(_ sender: Any) {
-        let v = MainParts()
-        let name = v.main_data
+        //let v = MainParts()
+        //let name = v.main_data
         
     }
     

@@ -4,12 +4,13 @@
 //
 //  Created by mac on 5/5/18.
 //  Copyright © 2018 nevdia. All rights reserved.
-//
+///Users/other/Desktop/AttaApp-IOS-master/Atta.xcodeproj
 
 import UIKit
 class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableViewDataSource{
     
-    @IBOutlet weak var catlist: UITableView!
+    
+    @IBOutlet weak var cattableview: UITableView!
     fileprivate var mainPartArray =  [MainParts]()
     
     
@@ -18,36 +19,32 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = UITableViewCell(style: <#T##UITableViewCellStyle#>.default, reuseIdentifier:"catcell")
-        cell.textLabel?.text = mainPartArray [indexPath.row].main_data
+       
+    let cell=UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "catcell")
+        cell.textLabel?.text = mainPartArray [indexPath.row].main_data.capitalized
         return cell
         
         
     }
     
-   
-        
-        
-   
-    
-  
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let param = ["retriveAllMainEquipmentCats":"1"]
         Server.POSTRequest( params: param ) {
                             (restult) in
-                            print(restult)
+                            //print(restult)
             guard let mainPartFromServerArray = restult as? NSArray else {return}
             for part in mainPartFromServerArray {
                 if let p =  part as? [String : Any]{
-                    let mp = MainParts()
+                    var mp = MainParts()
                     if let _id = p["id"] as? String {
                         mp.id = _id
+                        
                     }
                      if  let _main_data = p["main_data"] as? String{
                         mp.main_data = _main_data
+                        print(_main_data)
                     }
                     if let _img_src_mini = p ["img_src_mini"] as? String{
                         mp.img_src_mini = _img_src_mini
@@ -64,9 +61,12 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
               
             }
             
+            self.cattableview.reloadData()
+            
         }
         
-         catlist.reloadData()
+        // catlist.reloadData()
+        
         
         // Do any additional setup after loading the view.
         }
@@ -78,16 +78,7 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
 
 

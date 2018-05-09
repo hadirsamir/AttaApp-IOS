@@ -19,7 +19,6 @@
 		70B1DFF6209F8C1900DED979 /* MainPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFE8209F8C1700DED979 /* MainPartsViewController.swift */; };
 		70B1DFF7209F8C1900DED979 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFE9209F8C1700DED979 /* CategoriesViewController.swift */; };
 		70B1DFF8209F8C1900DED979 /* SparePartsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFEA209F8C1700DED979 /* SparePartsClass.swift */; };
-		70B1DFF9209F8C1900DED979 /* MainParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFEB209F8C1700DED979 /* MainParts.swift */; };
 		70B1DFFA209F8C1900DED979 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFEC209F8C1700DED979 /* HomeViewController.swift */; };
 		70B1DFFB209F8C1900DED979 /* SparePartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFED209F8C1800DED979 /* SparePartsViewController.swift */; };
 		70B1DFFC209F8C1900DED979 /* BrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFEE209F8C1800DED979 /* BrandsViewController.swift */; };
@@ -45,7 +44,6 @@
 		70B1DFE8209F8C1700DED979 /* MainPartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPartsViewController.swift; sourceTree = "<group>"; };
 		70B1DFE9209F8C1700DED979 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		70B1DFEA209F8C1700DED979 /* SparePartsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparePartsClass.swift; sourceTree = "<group>"; };
-		70B1DFEB209F8C1700DED979 /* MainParts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainParts.swift; sourceTree = "<group>"; };
 		70B1DFEC209F8C1700DED979 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		70B1DFED209F8C1800DED979 /* SparePartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparePartsViewController.swift; sourceTree = "<group>"; };
 		70B1DFEE209F8C1800DED979 /* BrandsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandsViewController.swift; sourceTree = "<group>"; };
@@ -89,19 +87,16 @@
 		047F564320963B6400100969 /* Atta */ = {
 			isa = PBXGroup;
 			children = (
-				70B1DFE6209F8C1600DED979 /* BrandsClass.swift */,
+				63EF1BCC20A3280B00F96091 /* Models */,
 				70B1DFEE209F8C1800DED979 /* BrandsViewController.swift */,
 				70B1DFE9209F8C1700DED979 /* CategoriesViewController.swift */,
 				70B1DFF1209F8C1800DED979 /* DetailsViewController.swift */,
 				70B1DFE7209F8C1700DED979 /* File.swift */,
 				70B1DFEC209F8C1700DED979 /* HomeViewController.swift */,
-				70B1DFEB209F8C1700DED979 /* MainParts.swift */,
-				70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */,
 				70B1DFE8209F8C1700DED979 /* MainPartsViewController.swift */,
 				70B1DFEF209F8C1800DED979 /* Modelconfig.swift */,
 				70B1DFF0209F8C1800DED979 /* Response.swift */,
 				70B1DFF2209F8C1800DED979 /* Serverrequest.swift */,
-				70B1DFEA209F8C1700DED979 /* SparePartsClass.swift */,
 				70B1DFED209F8C1800DED979 /* SparePartsViewController.swift */,
 				047F564420963B6500100969 /* AppDelegate.swift */,
 				047F564620963B6500100969 /* ViewController.swift */,
@@ -111,6 +106,16 @@
 				047F565020963B6500100969 /* Info.plist */,
 			);
 			path = Atta;
+			sourceTree = "<group>";
+		};
+		63EF1BCC20A3280B00F96091 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70B1DFEA209F8C1700DED979 /* SparePartsClass.swift */,
+				70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */,
+				70B1DFE6209F8C1600DED979 /* BrandsClass.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9EAF97FDB7E7A675A79B792D /* Pods */ = {
@@ -253,7 +258,6 @@
 				70B1DFF3209F8C1900DED979 /* MainPartsClass.swift in Sources */,
 				70B1DFFE209F8C1900DED979 /* Response.swift in Sources */,
 				70B1DFFA209F8C1900DED979 /* HomeViewController.swift in Sources */,
-				70B1DFF9209F8C1900DED979 /* MainParts.swift in Sources */,
 				047F564720963B6500100969 /* ViewController.swift in Sources */,
 				70B1DFF7209F8C1900DED979 /* CategoriesViewController.swift in Sources */,
 				70B1DFFB209F8C1900DED979 /* SparePartsViewController.swift in Sources */,

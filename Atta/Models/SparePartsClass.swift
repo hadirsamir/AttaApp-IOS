@@ -1,5 +1,5 @@
 //
-//  MainPartsClass.swift
+//  SparePartsClass.swift
 //  Atta
 //
 //  Created by mac on 5/5/18.
@@ -7,7 +7,10 @@
 //
 
 import Foundation
-class MainParts{
+
+struct SpareParts{
+    
+    
     
     var id = ""
     var main_data = ""
@@ -15,12 +18,12 @@ class MainParts{
     var img_src = ""
     var img_src_mini = ""
     var created_at = ""
+   
+   
     
     
-  
     
     
-        
-        
+    
     
 }
