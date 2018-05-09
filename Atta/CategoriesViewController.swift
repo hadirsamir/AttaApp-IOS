@@ -9,18 +9,28 @@
 import UIKit
 
 class CategoriesViewController: UIViewController ,UITableViewDelegate{
-   
-    /*func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+    var MainProdiuct : MainParts?
+    var SpareProduct : SpareParts?
+    var mainPartArray =  [MainParts]()
+    var sparePartArray =  [MainParts]()
+    
+    @IBOutlet weak var displaytableView: UITableView!
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return mainPartArray.count
+       
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "displaycell")
+        cell.textLabel?.text = MainProdiuct?.main_data
+        return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
-    }
-*/
+  
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

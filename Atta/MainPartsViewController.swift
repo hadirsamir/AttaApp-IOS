@@ -11,7 +11,7 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
     
     
     @IBOutlet weak var cattableview: UITableView!
-    fileprivate var mainPartArray =  [MainParts]()
+     var mainPartArray =  [MainParts]()
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,9 +27,18 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
         
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showmainList", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? CategoriesViewController {
+            destination.MainProdiuct? = mainPartArray[(cattableview.indexPathForSelectedRow?.row)!]
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        cattableview.delegate = self
+        cattableview.dataSource = self
         let param = ["retriveAllMainEquipmentCats":"1"]
         Server.POSTRequest( params: param ) {
                             (restult) in
