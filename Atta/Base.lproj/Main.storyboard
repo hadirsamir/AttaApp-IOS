@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vNf-cc-trj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -99,6 +99,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="x8t-rB-2of"/>
                     <connections>
                         <outlet property="firstbtn" destination="aZC-GE-mRx" id="MQ6-9r-GQj"/>
                         <outlet property="fourthbtn" destination="Rtc-uf-8Dm" id="DbM-tV-M1y"/>
@@ -111,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381.60000000000002" y="-143.47826086956522"/>
+            <point key="canvasLocation" x="720.79999999999995" y="-143.47826086956522"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Iq-Kk-4Z8">
@@ -171,7 +172,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M1-uq-nPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xQ0-Kv-vGa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="-143.47826086956522"/>
+            <point key="canvasLocation" x="1455.2" y="-143.47826086956522"/>
         </scene>
         <!--Main Parts View Controller-->
         <scene sceneID="vvI-pF-VRo">
@@ -222,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="te9-0c-I4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861.5999999999999" y="-143.47826086956522"/>
+            <point key="canvasLocation" x="2200.8000000000002" y="-143.47826086956522"/>
         </scene>
         <!--Categories View Controller-->
         <scene sceneID="TDP-mG-4Fg">
@@ -260,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hf-UP-yba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599.1999999999998" y="-143.47826086956522"/>
+            <point key="canvasLocation" x="2938.4000000000001" y="-143.47826086956522"/>
         </scene>
         <!--Brands View Controller-->
         <scene sceneID="ank-Wg-5bC">
@@ -274,7 +275,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="bsL-YT-OC7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customBrandCell" rowHeight="90" id="bsL-YT-OC7" customClass="BrandsTableViewCell" customModule="Atta" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bsL-YT-OC7" id="TC5-gq-eQT">
@@ -301,6 +302,11 @@
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="brandImage" destination="1dH-cZ-Cc1" id="1cw-9g-xJs"/>
+                                            <outlet property="brandLabel" destination="HNF-VG-lIL" id="k3i-Gn-BDj"/>
+                                            <outlet property="brandView" destination="Hqd-Tb-wnS" id="CL9-1K-Hab"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -314,6 +320,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HWc-Dj-shU"/>
                     </view>
+                    <connections>
+                        <outlet property="BrandList" destination="rqR-Ah-WMA" id="QpE-gn-PCn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXb-Qi-uEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,7 +421,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQr-ih-9Qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3314" y="126"/>
+            <point key="canvasLocation" x="3652" y="125.4872563718141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uey-5H-P2l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vNf-cc-trj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XYT-fx-BSk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zpw-xC-Giq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4g-LW-itb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="-143"/>
         </scene>
     </scenes>
     <resources>

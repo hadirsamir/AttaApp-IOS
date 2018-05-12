@@ -1,5 +1,5 @@
 //
-//  BrandTableViewCell.swift
+//  BrandsTableViewCell.swift
 //  Atta
 //
 //  Created by mac on 5/12/18.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class BrandTableViewCell: UITableViewCell {
-    
-   
-   
-    
-    
+class BrandsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var brandView: UIView!
+    
+    
+    @IBOutlet weak var brandImage: UIImageView!
+    
+    @IBOutlet weak var brandLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
