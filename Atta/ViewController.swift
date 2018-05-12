@@ -45,10 +45,10 @@ class ViewController: UIViewController  {
         
         //////// make ScrollView fit main view frame//////
         
-        let scrollViewWidth:CGFloat = self.view.frame.width
+        let scrollViewWidth:CGFloat = (UIScreen.screens.first?.bounds.width)!
         let scrollViewHeight:CGFloat = self.scrollView.frame.height
         //////setting scroll view to fit images sizes /////
-        self.scrollView.contentSize = CGSize(width:self.scrollView.frame.width * 4, height:self.scrollView.frame.height)
+        self.scrollView.contentSize = CGSize(width: scrollViewWidth * 4, height:self.scrollView.frame.height)
         self.pageControl.currentPage = 0
         
         

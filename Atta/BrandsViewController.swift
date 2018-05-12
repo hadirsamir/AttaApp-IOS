@@ -19,7 +19,7 @@ class BrandsViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = BrandList.dequeueReusableCell(withIdentifier: "customBrandCell") as! BrandsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customBrandCell") as! BrandsTableViewCell
         
         cell.brandLabel.text = brandArray [indexPath.row].brand_name.capitalized
        // cell.brandImage.image = 

@@ -18,27 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splach screen" translatesAutoresizingMaskIntoConstraints="NO" id="8ek-N1-aDK">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="xlT-lF-yJB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="xlT-lF-yJB">
                                 <rect key="frame" x="76" y="265" width="240" height="145"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="bottom" secondItem="fpF-Kf-SZx" secondAttribute="bottom" id="4s7-jb-671"/>
                             <constraint firstItem="fpF-Kf-SZx" firstAttribute="bottom" secondItem="xlT-lF-yJB" secondAttribute="bottom" constant="257" id="98v-Tr-zRd"/>
                             <constraint firstItem="xlT-lF-yJB" firstAttribute="top" secondItem="fpF-Kf-SZx" secondAttribute="top" constant="245" id="Geh-Ry-ydk"/>
                             <constraint firstItem="fpF-Kf-SZx" firstAttribute="trailing" secondItem="xlT-lF-yJB" secondAttribute="trailing" constant="59" id="Jhm-Au-Cny"/>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QX6-hQ-qMS"/>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="bottom" secondItem="fpF-Kf-SZx" secondAttribute="bottom" id="aVT-Wq-AAe"/>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="top" secondItem="fpF-Kf-SZx" secondAttribute="top" id="ego-6i-Udc"/>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="leading" secondItem="fpF-Kf-SZx" secondAttribute="leading" id="hzI-2F-edQ"/>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="trailing" secondItem="fpF-Kf-SZx" secondAttribute="trailing" id="jLC-Bz-b3i"/>
                             <constraint firstItem="xlT-lF-yJB" firstAttribute="leading" secondItem="fpF-Kf-SZx" secondAttribute="leading" constant="76" id="ngf-ib-Uk6"/>
-                            <constraint firstAttribute="trailing" secondItem="8ek-N1-aDK" secondAttribute="trailing" id="the-TN-XR2"/>
-                            <constraint firstItem="8ek-N1-aDK" firstAttribute="top" secondItem="fpF-Kf-SZx" secondAttribute="top" id="ugY-ws-4qo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fpF-Kf-SZx"/>
                     </view>
@@ -50,6 +39,5 @@
     </scenes>
     <resources>
         <image name="logo2" width="859" height="317"/>
-        <image name="splach screen" width="1585" height="2713"/>
     </resources>
 </document>

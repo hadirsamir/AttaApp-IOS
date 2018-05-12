@@ -9,8 +9,10 @@
 import UIKit
 
 class SparePartsViewController: UIViewController,UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
+    @IBOutlet weak var SpareList: UITableView!
+    var spareArray = [SpareParts]()
+    //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return spareArray.count
 //    }
 //
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -22,6 +24,7 @@ class SparePartsViewController: UIViewController,UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }

@@ -18,7 +18,8 @@ class ModelConfig: NSObject {
      static let urlEncoding = URLEncoding.default
      static let headers = ["Content-Type": "application/x-www-form-urlencoded"]
     
-     static let SERVER_URL = "http://193.227.14.31/garar/webservices/webApis.php"
+    static let SERVER_URL = "http://193.227.14.31/garar/webservices/webApis.php"
+    static let SERVER_URL_images = "http://193.227.14.31/garar/"
 
    
 }

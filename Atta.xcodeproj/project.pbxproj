@@ -13,6 +13,8 @@
 		047F564C20963B6500100969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F564B20963B6500100969 /* Assets.xcassets */; };
 		047F564F20963B6500100969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047F564D20963B6500100969 /* LaunchScreen.storyboard */; };
 		04A684C820A728C400AB0B27 /* BrandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A684C720A728C400AB0B27 /* BrandsTableViewCell.swift */; };
+		04A684CA20A7405900AB0B27 /* MainPartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A684C920A7405900AB0B27 /* MainPartsTableViewCell.swift */; };
+		04A684CC20A75F4200AB0B27 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A684CB20A75F4200AB0B27 /* LoadImage.swift */; };
 		5347BFCDDE3E2DBED997713E /* Pods_Atta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CBF935CEF03F88C651CFB /* Pods_Atta.framework */; };
 		70B1DFF3209F8C1900DED979 /* MainPartsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */; };
 		70B1DFF4209F8C1900DED979 /* BrandsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFE6209F8C1600DED979 /* BrandsClass.swift */; };
@@ -36,6 +38,8 @@
 		047F564E20963B6500100969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047F565020963B6500100969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A684C720A728C400AB0B27 /* BrandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsTableViewCell.swift; sourceTree = "<group>"; };
+		04A684C920A7405900AB0B27 /* MainPartsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPartsTableViewCell.swift; sourceTree = "<group>"; };
+		04A684CB20A75F4200AB0B27 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		240CBF935CEF03F88C651CFB /* Pods_Atta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60154A7576ACAD1F629E9E9A /* Pods-Atta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Atta/Pods-Atta.release.xcconfig"; sourceTree = "<group>"; };
 		70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPartsClass.swift; sourceTree = "<group>"; };
@@ -67,8 +71,8 @@
 		041BA3CB20A6E0FD00601090 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				70B1DFF2209F8C1800DED979 /* Serverrequest.swift */,
 				70B1DFEF209F8C1800DED979 /* Modelconfig.swift */,
+				70B1DFF2209F8C1800DED979 /* Serverrequest.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -98,10 +102,11 @@
 				63EF1BCC20A3280B00F96091 /* Models */,
 				70B1DFEE209F8C1800DED979 /* BrandsViewController.swift */,
 				04A684C720A728C400AB0B27 /* BrandsTableViewCell.swift */,
-				70B1DFE9209F8C1700DED979 /* CategoriesViewController.swift */,
 				70B1DFF1209F8C1800DED979 /* DetailsViewController.swift */,
 				70B1DFEC209F8C1700DED979 /* HomeViewController.swift */,
 				70B1DFE8209F8C1700DED979 /* MainPartsViewController.swift */,
+				70B1DFE9209F8C1700DED979 /* CategoriesViewController.swift */,
+				04A684C920A7405900AB0B27 /* MainPartsTableViewCell.swift */,
 				70B1DFED209F8C1800DED979 /* SparePartsViewController.swift */,
 				047F564420963B6500100969 /* AppDelegate.swift */,
 				047F564620963B6500100969 /* ViewController.swift */,
@@ -109,6 +114,7 @@
 				047F564B20963B6500100969 /* Assets.xcassets */,
 				047F564D20963B6500100969 /* LaunchScreen.storyboard */,
 				047F565020963B6500100969 /* Info.plist */,
+				04A684CB20A75F4200AB0B27 /* LoadImage.swift */,
 			);
 			path = Atta;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B1DFFD209F8C1900DED979 /* Modelconfig.swift in Sources */,
+				04A684CA20A7405900AB0B27 /* MainPartsTableViewCell.swift in Sources */,
 				70B1DFF4209F8C1900DED979 /* BrandsClass.swift in Sources */,
 				70B1DFF6209F8C1900DED979 /* MainPartsViewController.swift in Sources */,
 				70B1DFF8209F8C1900DED979 /* SparePartsClass.swift in Sources */,
@@ -267,6 +274,7 @@
 				70B1DFFC209F8C1900DED979 /* BrandsViewController.swift in Sources */,
 				047F564520963B6500100969 /* AppDelegate.swift in Sources */,
 				04A684C820A728C400AB0B27 /* BrandsTableViewCell.swift in Sources */,
+				04A684CC20A75F4200AB0B27 /* LoadImage.swift in Sources */,
 				70B1E000209F8C1900DED979 /* Serverrequest.swift in Sources */,
 				70B1DFFF209F8C1900DED979 /* DetailsViewController.swift in Sources */,
 			);

@@ -8,13 +8,24 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController ,UITableViewDelegate{
-    var MainProdiuct : MainParts?
+class CategoriesViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
+    var product_id = ""
     var SpareProduct : SpareParts?
     var mainPartArray =  [MainParts]()
     var sparePartArray =  [MainParts]()
     
     @IBOutlet weak var displaytableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(product_id)
+//        Server.POSTRequest(params: <#T##[String : Any]#>, Result: <#T##(Any) -> ()#>)
+        // Do any additional setup after loading the view.
+    }
+
+    
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,19 +34,14 @@ class CategoriesViewController: UIViewController ,UITableViewDelegate{
        
     }
     
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "displaycell")
-        cell.textLabel?.text = MainProdiuct?.main_data
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "displaycell") as! UITableViewCell
+        cell.textLabel?.text = mainPartArray[indexPath.row].main_data
         return cell
     }
-  
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
