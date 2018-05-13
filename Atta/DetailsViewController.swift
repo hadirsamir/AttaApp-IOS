@@ -15,6 +15,8 @@ class DetailsViewController: UIViewController {
     @IBOutlet var namelabel: UIView!
     
     @IBOutlet weak var pricelabel: UILabel!
+    var sparepart = SpareParts ()
+    var mainpart = MainParts ()
     
     override func viewDidLoad() {
         super.viewDidLoad()

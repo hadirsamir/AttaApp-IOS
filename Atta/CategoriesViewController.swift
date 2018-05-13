@@ -12,7 +12,8 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
     var product_id = ""
     var SpareProduct : SpareParts?
     var mainPartArray =  [MainParts]()
-    var sparePartArray =  [MainParts]()
+    var sparePartArray =  [SpareParts]()
+    
     
     @IBOutlet weak var displaytableView: UITableView!
     
@@ -20,16 +21,23 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
         super.viewDidLoad()
         displaytableView.delegate = self
         displaytableView.dataSource = self
-        
         print(product_id)
-//        Server.POSTRequest(params: <#T##[String : Any]#>, Result: <#T##(Any) -> ()#>)
-        // Do any additional setup after loading the view.
+        
+        
+
     }
 
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let spare = segue.destination as? DetailsViewController{
+            spare.sparepart = sparePartArray[(displaytableView.indexPathForSelectedRow?.row)!]
+            spare.mainpart = mainPartArray[(displaytableView.indexPathForSelectedRow?.row)!]
+           
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "showDetails", sender: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +52,7 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
         let cell = displaytableView.dequeueReusableCell(withIdentifier: "displaycell") as! CategoryTableViewCell
         cell.catLabel.text = mainPartArray[indexPath.row].main_data
         cell.catLabel.text = sparePartArray[indexPath.row].main_data
-       // cell.catImage.image = UIImage(named : )
+      
         return cell
     }
     
