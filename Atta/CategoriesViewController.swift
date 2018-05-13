@@ -23,8 +23,21 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
         displaytableView.dataSource = self
         print(product_id)
         
+        let param = ["retriveAllItems" : "1"]
         
-
+        Server.POSTRequest( params: param ) {
+            (restult) in
+            //print(restult)
+            guard let itemFromServerArray = restult as? NSArray else {return}
+            for part in itemFromServerArray{
+                if let i = part as? [String : Any]{
+                    
+                }
+            }
+            
+            
+            
+    }
     }
 
     

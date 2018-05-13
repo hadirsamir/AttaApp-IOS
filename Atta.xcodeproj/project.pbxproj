@@ -17,6 +17,7 @@
 		04A684CC20A75F4200AB0B27 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A684CB20A75F4200AB0B27 /* LoadImage.swift */; };
 		04DA8CD720A84A9A00087554 /* SparePartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8CD620A84A9A00087554 /* SparePartsTableViewCell.swift */; };
 		04DA8CD920A8691000087554 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8CD820A8691000087554 /* CategoryTableViewCell.swift */; };
+		04DA8CDB20A8833000087554 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8CDA20A8833000087554 /* ItemClass.swift */; };
 		5347BFCDDE3E2DBED997713E /* Pods_Atta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CBF935CEF03F88C651CFB /* Pods_Atta.framework */; };
 		70B1DFF3209F8C1900DED979 /* MainPartsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */; };
 		70B1DFF4209F8C1900DED979 /* BrandsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B1DFE6209F8C1600DED979 /* BrandsClass.swift */; };
@@ -44,6 +45,7 @@
 		04A684CB20A75F4200AB0B27 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		04DA8CD620A84A9A00087554 /* SparePartsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparePartsTableViewCell.swift; sourceTree = "<group>"; };
 		04DA8CD820A8691000087554 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		04DA8CDA20A8833000087554 /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		240CBF935CEF03F88C651CFB /* Pods_Atta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60154A7576ACAD1F629E9E9A /* Pods-Atta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Atta/Pods-Atta.release.xcconfig"; sourceTree = "<group>"; };
 		70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPartsClass.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				70B1DFEA209F8C1700DED979 /* SparePartsClass.swift */,
 				70B1DFE5209F8C1600DED979 /* MainPartsClass.swift */,
 				70B1DFE6209F8C1600DED979 /* BrandsClass.swift */,
+				04DA8CDA20A8833000087554 /* ItemClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				04A684CC20A75F4200AB0B27 /* LoadImage.swift in Sources */,
 				70B1E000209F8C1900DED979 /* Serverrequest.swift in Sources */,
 				70B1DFFF209F8C1900DED979 /* DetailsViewController.swift in Sources */,
+				04DA8CDB20A8833000087554 /* ItemClass.swift in Sources */,
 				04DA8CD920A8691000087554 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
