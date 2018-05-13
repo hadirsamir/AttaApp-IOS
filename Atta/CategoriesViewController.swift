@@ -18,6 +18,8 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        displaytableView.delegate = self
+        displaytableView.dataSource = self
         
         print(product_id)
 //        Server.POSTRequest(params: <#T##[String : Any]#>, Result: <#T##(Any) -> ()#>)
@@ -26,18 +28,23 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
 
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return mainPartArray.count
+        return sparePartArray.count
        
     }
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "displaycell") as! UITableViewCell
-        cell.textLabel?.text = mainPartArray[indexPath.row].main_data
+        let cell = displaytableView.dequeueReusableCell(withIdentifier: "displaycell") as! CategoryTableViewCell
+        cell.catLabel.text = mainPartArray[indexPath.row].main_data
+        cell.catLabel.text = sparePartArray[indexPath.row].main_data
+       // cell.catImage.image = UIImage(named : )
         return cell
     }
     
@@ -49,14 +56,6 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }

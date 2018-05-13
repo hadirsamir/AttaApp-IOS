@@ -75,9 +75,9 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
        let cell = cattableview.dequeueReusableCell(withIdentifier: "catcell") as! MainPartsTableViewCell
         let mainPart =  mainPartArray [indexPath.row]
         cell.mainLabel.text = mainPart.main_data.capitalized
-        cell.backgroundView = UIView()
+        //cell.backgroundView = UIView()
         cell.mainImage.downloadedFrom(url:URL(string: "\(ModelConfig.SERVER_URL_images)/\(mainPart.img_src)")! )
-        cell.backgroundView!.addSubview(cell.mainImage)
+       // cell.backgroundView!.addSubview(cell.mainImage)
         
         return cell
         
