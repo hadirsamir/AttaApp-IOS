@@ -12,16 +12,19 @@ class DetailsViewController: UIViewController {
 
     @IBOutlet weak var detailimageview: UIImageView!
     
-    @IBOutlet var namelabel: UIView!
+    @IBOutlet var namelabel: UILabel!
     
     @IBOutlet weak var pricelabel: UILabel!
-    var sparepart = SpareParts ()
-    var mainpart = MainParts ()
+    
+    
+    var itempart = Item()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        namelabel.text  = itempart.item_name
+        pricelabel.text = itempart.item_desc
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,14 +33,6 @@ class DetailsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
