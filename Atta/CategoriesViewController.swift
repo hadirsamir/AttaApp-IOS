@@ -97,7 +97,7 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = displaytableView.dequeueReusableCell(withIdentifier: "displaycell") as! CategoryTableViewCell
+        let cell = displaytableView.dequeueReusableCell(withIdentifier: "showing") as! CategoryTableViewCell
        // let cell = UITableView.dequeueReusableCell(displaytableView)
         cell.catLabel.text = itemArray[indexPath.row].item_name
         
