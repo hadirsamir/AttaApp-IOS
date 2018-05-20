@@ -263,14 +263,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-bV-CGg">
-                                                    <rect key="frame" x="28" y="31" width="168" height="71"/>
+                                                    <rect key="frame" x="28" y="31" width="194" height="71"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="g1" translatesAutoresizingMaskIntoConstraints="NO" id="Ghr-Ai-Qf9">
-                                                    <rect key="frame" x="231" y="8" width="111" height="108"/>
+                                                    <rect key="frame" x="249" y="11" width="111" height="108"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -293,6 +293,9 @@
                             <constraint firstItem="0qU-Qb-Iau" firstAttribute="top" secondItem="52Q-fZ-C0f" secondAttribute="top" constant="52" id="7xK-kk-Jik"/>
                             <constraint firstItem="0qU-Qb-Iau" firstAttribute="trailing" secondItem="52Q-fZ-C0f" secondAttribute="trailing" id="DDL-Eo-6Qk"/>
                             <constraint firstItem="0qU-Qb-Iau" firstAttribute="bottom" secondItem="52Q-fZ-C0f" secondAttribute="bottom" id="FoO-1J-gsA"/>
+                            <constraint firstItem="0qU-Qb-Iau" firstAttribute="trailing" secondItem="52Q-fZ-C0f" secondAttribute="trailing" id="NgW-c0-ce2"/>
+                            <constraint firstItem="0qU-Qb-Iau" firstAttribute="leading" secondItem="52Q-fZ-C0f" secondAttribute="leading" id="Sim-pY-jHs"/>
+                            <constraint firstItem="0qU-Qb-Iau" firstAttribute="bottom" secondItem="52Q-fZ-C0f" secondAttribute="bottom" id="lbL-wa-hhg"/>
                             <constraint firstItem="0qU-Qb-Iau" firstAttribute="leading" secondItem="52Q-fZ-C0f" secondAttribute="leading" id="sXo-4l-T3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="52Q-fZ-C0f"/>
