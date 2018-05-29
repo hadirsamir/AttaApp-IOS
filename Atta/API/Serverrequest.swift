@@ -12,6 +12,7 @@ import SwiftyJSON
 
 
 class Server : ModelConfig {
+
     static let errorMSG = "Error, Please tray again"
     class func GetRequest (Result:@escaping(_ result : Any)->() ) {
       

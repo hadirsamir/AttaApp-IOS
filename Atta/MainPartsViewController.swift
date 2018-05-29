@@ -85,7 +85,7 @@ class MainPartsViewController: UIViewController,UITableViewDelegate ,UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showmainList", sender: mainPartArray[indexPath.row])
+        self.performSegue(withIdentifier: "showmainList", sender: mainPartArray[indexPath.row])
     }
 
    

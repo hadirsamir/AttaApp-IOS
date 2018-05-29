@@ -75,17 +75,14 @@ class CategoriesViewController: UIViewController , UITableViewDelegate , UITable
     }
     }
 
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let item = segue.destination as? DetailsViewController{
             item.itempart = itemArray[(displaytableView.indexPathForSelectedRow?.row)!]
-            
-           
+
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetails",sender: itemArray[indexPath.row])
+        self.performSegue(withIdentifier: "seg_cate_showDetails",sender: itemArray[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

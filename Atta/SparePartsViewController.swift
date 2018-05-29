@@ -71,7 +71,7 @@ class SparePartsViewController: UIViewController,UITableViewDelegate , UITableVi
         return cell
        }
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showspareList", sender: spareArray[indexPath.row])
+        self.performSegue(withIdentifier: "showspareList", sender: spareArray[indexPath.row])
        }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
